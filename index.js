@@ -48,6 +48,9 @@ function Person(attributes) {
 Person.prototype.eat = function () {
   this.stomach.push("someFood");
 }
+Person.prototype.poop = function() {
+  this.stomach.length = 0;
+}
 Person.prototype.toString = function() {
   return `${this.name}, ${this.age}`;
 };
